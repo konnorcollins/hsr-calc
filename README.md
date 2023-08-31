@@ -36,6 +36,9 @@ You'll need a >=3.9 python installation to run it.  Change the variables under t
 The python calculator is very barebones. You will likely need to do more than number tweaking depending on how specific your parameters are.
 
 
-
+## Sources
+HSR damage calc script based off of the following sources:
+[Keqing Mains](https://srl.keqingmains.com/combat-mechanics/damage/damage-formula)
+[Arkku's doc](https://docs.google.com/document/d/e/2PACX-1vQ9M7q5jLz9DKkTRlsGiB8RGYyPQyhShbuTbrVPQ7-Ke4_U787MfWzr2NjY-KrQo5Ota4Lj3JrFyge9/pub)
 
 
