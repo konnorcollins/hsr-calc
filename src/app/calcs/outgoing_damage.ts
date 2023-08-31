@@ -9,6 +9,6 @@ export function calculateOutgoingDamage(
     damageTakenMultiplier: number,
     toughnessMultiplier: number)
 {
-    let outgoingDamage = baseDamage * critMultiplier * damageBonusMultiplier * defenseMultiplier * resistanceMultiplier * damageTakenMultiplier * toughnessMultiplier
+    const outgoingDamage = baseDamage * critMultiplier * damageBonusMultiplier * defenseMultiplier * resistanceMultiplier * damageTakenMultiplier * toughnessMultiplier
     return outgoingDamage
 }

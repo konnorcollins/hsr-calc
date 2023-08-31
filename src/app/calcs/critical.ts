@@ -5,7 +5,7 @@ import clamp from "../utils/clamp";
 
 export function calculateAverageCrit(critRate: number, critDamageMulti: number): number
 {
-    let averageCrit = 1.0 + clamp(0.0, critRate, 1.0) * critDamageMulti
+    const averageCrit = 1.0 + clamp(0.0, critRate, 1.0) * critDamageMulti
     return averageCrit
 }
 
