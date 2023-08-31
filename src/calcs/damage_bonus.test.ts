@@ -1,4 +1,4 @@
-// app/calcs/damage_bonus.test.ts
+// calcs/damage_bonus.test.ts
 
 import { expect, test } from 'vitest'
 

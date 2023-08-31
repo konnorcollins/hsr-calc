@@ -1,4 +1,4 @@
-// app/calcs/outgoing_damage.ts
+// calcs/outgoing_damage.ts
 
 export function calculateOutgoingDamage(
     baseDamage: number, 

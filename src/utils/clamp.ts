@@ -1,4 +1,4 @@
-// app/utils/clamp.ts
+// utils/clamp.ts
 
 export default function clamp(minimum: number, 
     value: number, 

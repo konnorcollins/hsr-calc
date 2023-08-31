@@ -1,4 +1,4 @@
-// app/calcs/damage_bonus.ts
+// calcs/damage_bonus.ts
 
 export function calculateDamageBonusMultiplier(
     damageBonuses: Array<number>): number

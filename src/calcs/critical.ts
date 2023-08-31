@@ -1,5 +1,4 @@
-// app/calcs/critical.ts
-// formulas sourced from https://srl.keqingmains.com/combat-mechanics/damage/damage-formula
+// calcs/critical.ts
 
 import clamp from "../utils/clamp";
 

@@ -1,4 +1,4 @@
-// app/calcs/resistance.ts
+// calcs/resistance.ts
 
 import clamp from "../utils/clamp"
 

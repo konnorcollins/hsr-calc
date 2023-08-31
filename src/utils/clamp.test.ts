@@ -1,4 +1,4 @@
-// app/utils/clamp.test.ts
+// utils/clamp.test.ts
 
 import { expect, test } from 'vitest'
 

@@ -1,4 +1,4 @@
-// app/calcs/toughness.ts
+// calcs/toughness.ts
 
 export function calculateToughnessMultiplier(hasToughness: boolean)
 {

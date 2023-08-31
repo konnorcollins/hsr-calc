@@ -1,4 +1,4 @@
-// app/calcs/defense.ts
+// calcs/defense.ts
 
 export function calculateEnemyDefenseMultiplier(characterLevel: number, enemyLevel: number)
 {
