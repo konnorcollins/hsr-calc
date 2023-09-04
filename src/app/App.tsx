@@ -1,33 +1,32 @@
-import { useState } from 'react'
 import reactLogo from '../assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { useAppDispatch, useAppSelector } from './hooks'
+import { insertDummy } from '../features/relic/relic-slice'
+import RelicCard from '../features/relic/RelicCard'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const relics = useAppSelector((state) => state.relics.inventory)
+  const dispatch = useAppDispatch()
+
+  function handleClick() {
+    dispatch(insertDummy())
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="flex">
+        <div className="bg-gray-700 w-screen h-screen">
+        {relics[0] ? RelicCard(relics[0]) : "Nothing to see here!"}
+        </div>
+        <div className="fixed bottom-0 w-screen h-6 flex bg-gray-900 text-white shadow-lg">
+          <button onClick={handleClick}>Press me!</button>
+          <p></p>
+          <img src={reactLogo} />
+          <img src={viteLogo} />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }

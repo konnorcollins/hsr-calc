@@ -2,8 +2,12 @@
 
 import { configureStore } from "@reduxjs/toolkit";
 
+import relicReducer from '../features/relic/relic-slice'
+ 
 export const store = configureStore({
-    reducer: {}
+    reducer: {
+        relics: relicReducer
+    }
 })
 
 export type AppDispatch = typeof store.dispatch;

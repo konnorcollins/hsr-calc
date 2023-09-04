@@ -2,7 +2,7 @@
 
 // These are 'stat' definitions you would see on a lightcone, or relic.
 
-export enum STAT_TYPES {
+export enum STAT_TYPE {
     HP_FLAT,
     HP_PERCENT,
     
