@@ -1,9 +1,11 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 
+import { RELIC_SET } from '../../common/relic_sets'
 import { RELIC_SLOT } from '../../common/relic_slots'
 import { STAT_TYPE } from '../../common/stat_types'
 
 import { Relic } from './relic-type'
+import { generateBasicRelic } from './relic-generator'
 
 
 interface RelicState {
@@ -14,12 +16,7 @@ const initialState: RelicState = {
     inventory: [],
 }
 
-const dummyRelic: Relic = {
-    slot: RELIC_SLOT.SPHERE,
-    set: "Sealing Space Station",
-    main_stat: STAT_TYPE.QUANTUM_DMG_BOOST_PERCENT,
-    main_stat_value: 0.48
-}
+const dummyRelic: Relic = generateBasicRelic(RELIC_SLOT.SPHERE, RELIC_SET.SPACE_SEALING_STATION, STAT_TYPE.ATK_PERCENT, 0.48)
 
 // TODO: find a way to generate a random hash/id for each relic
 const relicSlice = createSlice({
